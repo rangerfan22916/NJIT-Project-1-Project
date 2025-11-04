@@ -1,13 +1,13 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/places/Yosemite.jpg",
+            "imgLocation": "Yosemite",
+            "description": "Yosemite National Park, California USA",
+            "Established": "October 1, 1890"
         },
         {
-            "imgPath": "img/places/austria.jpg",
+            "imgPath": "img/places/Zion.jpg",
             "imgLocation": "Austria",
             "description": "Austrian chapel",
             "date": "01/02/2016"
