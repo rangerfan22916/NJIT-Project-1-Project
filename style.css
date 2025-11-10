@@ -6,7 +6,6 @@ body {
   background-attachment: fixed;
 }
 
-/* Main container for the slideshow */
 #photoBooth {
   padding: 25px;
   max-width: 500px;
@@ -17,13 +16,11 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Holds the displayed photo */
 .photoHolder {
   width: 100%;
   text-align: center;
 }
 
-/* Photo styling */
 .thumbnail {
   width: 100%;
   max-width: 100%;
@@ -31,14 +28,12 @@ body {
   border-radius: 4px;
 }
 
-/* Banner text */
 .banner {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
 }
 
-/* 'More Content' indicator */
 .moreIndicator {
   height: 50px;
   width: 50px;
@@ -46,7 +41,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Navigation button styles */
 #nav img {
   height: 50px;
   width: 50px;
@@ -59,7 +53,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Metadata container */
 .details {
   border: 1px dashed #000;
   padding: 15px;
@@ -73,7 +66,6 @@ body {
   margin: 10px 0;
 }
 
-/* Rotation classes */
 .rot90 {
   transform: rotate(90deg);
   transition: transform 0.35s ease;

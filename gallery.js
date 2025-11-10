@@ -1,54 +1,67 @@
-let mCurrentIndex = 0 // Tracks the current image index
-let mImages = [] // Array to hold GalleryImage objects
-const mUrl = 'https://your-json-url.com' // Replace with actual JSON URL
-const mWaitTime = 5000 // Timer interval in milliseconds
+let mCurrentIndex = 0;
+let mImages = [];
+const mUrl = 'parks.json'; // Local JSON file
+const mWaitTime = 5000; // 5 seconds
+let mTimer;
 
 $(document).ready(() => {
-  $('.details').hide() // Hide details initially
+  $('.details').hide();
 
-  // Call a function here to start the timer for the slideshow
+  // Fetch JSON data
+  fetchJSON();
 
-  // Select the moreIndicator button and add a click event to:
-  // - toggle the rotation classes (rot90 and rot270)
-  // - slideToggle the visibility of the .details section
+  // Event handlers
+  $('.moreIndicator').click(function() {
+    $(this).toggleClass('rot90 rot270');
+    $('.details').slideToggle('slow');
+  });
 
-  // Select the "Next Photo" button and add a click event to call showNextPhoto
+  $('#nextPhoto').click(() => showNextPhoto());
+  $('#prevPhoto').click(() => showPrevPhoto());
 
-  // Select the "Previous Photo" button and add a click event to call showPrevPhoto
+  startTimer();
+});
 
-  // Call fetchJSON() to load the initial set of images
-  fetchJSON()
-})
-
-// Function to fetch JSON data and store it in mImages
-function fetchJSON () {
-  // Use $.ajax here to request the JSON data from mUrl
-  // On success, parse the JSON and push each image object into mImages array
-  // After JSON is loaded, call swapPhoto() to display the first image
+// Fetch JSON and store in mImages
+function fetchJSON() {
+  $.ajax({
+    url: mUrl,
+    dataType: 'json',
+    success: function(data) {
+      mImages = data.images;
+      swapPhoto(); // Show first image
+    },
+    error: function() {
+      console.error('Failed to load JSON data.');
+    }
+  });
 }
 
-// Function to swap and display the next photo in the slideshow
-function swapPhoto () {
-  // Access mImages[mCurrentIndex] to update the image source and details
-  // Update the #photo element's src attribute with the current image's path
-  // Update the .location, .description, and .date elements with the current image's details
+// Display photo and metadata
+function swapPhoto() {
+  if (mImages.length === 0) return;
+
+  const currentImage = mImages[mCurrentIndex];
+  $('#photo').attr('src', currentImage.imgPath);
+  $('.location').text('Location: ' + currentImage.imgLocation);
+  $('.description').text('Description: ' + currentImage.description);
+  $('.date').text('Date: ' + currentImage.established);
 }
 
-// Advances to the next photo, loops to the first photo if the end of array is reached
-function showNextPhoto () {
-  // Increment mCurrentIndex and call swapPhoto()
-  // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
+// Show next photo
+function showNextPhoto() {
+  mCurrentIndex = (mCurrentIndex + 1) % mImages.length;
+  swapPhoto();
 }
 
-// Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
-function showPrevPhoto () {
-  // Decrement mCurrentIndex and call swapPhoto()
-  // Ensure it loops to the end if mCurrentIndex is less than 0
+// Show previous photo
+function showPrevPhoto() {
+  mCurrentIndex = (mCurrentIndex - 1 + mImages.length) % mImages.length;
+  swapPhoto();
 }
 
-// Starter code for the timer function
-function startTimer () {
-  // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
-  // Consider using setInterval to achieve this functionality
-  // Hint: Make sure only one timer runs at a time
+// Automatic timer
+function startTimer() {
+  clearInterval(mTimer);
+  mTimer = setInterval(showNextPhoto, mWaitTime);
 }
