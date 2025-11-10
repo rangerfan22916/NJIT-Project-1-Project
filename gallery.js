@@ -7,11 +7,13 @@ let timer
 $(document).ready(() => {
   $('.details').hide()
 
+  // Toggle the metadata details
   $('.moreIndicator').click(() => {
     $('.moreIndicator').toggleClass('rot90 rot270')
     $('.details').slideToggle(400)
   })
 
+  // Next and previous button click handlers
   $('#nextPhoto').click(() => showNextPhoto())
   $('#prevPhoto').click(() => showPrevPhoto())
 
@@ -39,7 +41,9 @@ function fetchJSON() {
 function swapPhoto() {
   if (mImages.length === 0) return
   const currentImage = mImages[mCurrentIndex]
-  $('#photo').attr('src', currentImage.imgPath)
+  $('#photo').fadeOut(300, function () {
+    $('#photo').attr('src', currentImage.imgPath).fadeIn(300)
+  })
   $('.location').text(`Location: ${currentImage.imgLocation}`)
   $('.description').text(`Description: ${currentImage.description}`)
   $('.date').text(`Established: ${currentImage.Established}`)
