@@ -1,82 +1,64 @@
-{
-    "images": [
-        {
-            "imgPath": "img/places/Yosemite.jpg",
-            "imgLocation": "Yosemite",
-            "description": "Yosemite National Park, California USA",
-            "Established": "October 1, 1890"
-        },
-        {
-            "imgPath": "img/places/Zion.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
-        },
-        {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
-        },
-        {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
-        },
-        {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
-        },
-        {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
-        },
-        {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
-        },
-        {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
-        },
-        {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
-        },
-        {
-            "imgPath": "img/places/norway.jpg",
-            "imgLocation": "Norway",
-            "description": "Countryside mountains",
-            "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
-        }
+ {
+  "images": [
+    {
+      "imgPath": "img/places/yosemite.jpg",
+      "imgLocation": "Yosemite National Park (CA)",
+      "description": "Known for its towering granite cliffs like El Capitan and Half Dome, giant sequoia trees, and stunning waterfalls.",
+      "established": "October 1, 1890"
+    },
+    {
+      "imgPath": "img/places/zion.jpg",
+      "imgLocation": "Zion National Park (UT)",
+      "description": "Features massive sandstone cliffs and narrow canyons, with famous hikes like Angels Landing.",
+      "established": "November 19, 1919"
+    },
+    {
+      "imgPath": "img/places/grand-canyon.jpg",
+      "imgLocation": "Grand Canyon National Park (AZ)",
+      "description": "A colossal canyon carved by the Colorado River, famous for its vast and colorful vistas.",
+      "established": "February 26, 1919"
+    },
+    {
+      "imgPath": "img/places/Glacier.jpg",
+      "imgLocation": "Glacier National Park (MT)",
+      "description": "Characterized by its rugged mountains, pristine lakes, and the scenic Going-to-the-Sun Road.",
+      "established": "May 11, 1910"
+    },
+    {
+      "imgPath": "img/places/Yellowstone.jpg",
+      "imgLocation": "Yellowstone National Park (WY)",
+      "description": "Famous for its geothermal features like Old Faithful, diverse wildlife, and dramatic landscapes.",
+      "established": "March 1, 1872"
+    },
+    {
+      "imgPath": "img/places/grand-teton.jpg",
+      "imgLocation": "Grand Teton National Park (WY)",
+      "description": "Home to jagged, dramatic peaks that rise sharply from the valley floor.",
+      "established": "February 26, 1929"
+    },
+    {
+      "imgPath": "img/places/Rocky-Mountain.jpg",
+      "imgLocation": "Rocky Mountain National Park (CO)",
+      "description": "Offers alpine lakes, high mountain peaks, and scenic drives.",
+      "established": "January 26, 1915"
+    },
+    {
+      "imgPath": "img/places/Olympic.jpg",
+      "imgLocation": "Olympic National Park (WA)",
+      "description": "A unique park with diverse ecosystems, including temperate rainforests, rugged coastlines, and glaciated mountains.",
+      "established": "June 29, 1938"
+    },
+    {
+      "imgPath": "img/places/crater-lake.jpg",
+      "imgLocation": "Crater Lake National Park (OR)",
+      "description": "Features a deep blue lake formed in the caldera of a collapsed volcano.",
+      "established": "May 22, 1902"
+    },
+    {
+      "imgPath": "img/places/Smoky-Mountain.jpg",
+      "imgLocation": "Great Smoky Mountains National Park (TN and NC)",
+      "description": "The most visited national park, known for its rolling mountains, misty peaks, and diverse plant and animal life.",
+      "established": "June 15, 1934"
+    }
   ]
 }
