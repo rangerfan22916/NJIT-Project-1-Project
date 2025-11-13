@@ -58,11 +58,20 @@ body {
   opacity: 0.8;
 }
 
+.nav-arrow.rot180 { transform: rotate(180deg); }
+
 .arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+}
+
+.more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .moreIndicator {
@@ -75,16 +84,23 @@ body {
 .moreIndicator.rot90 { transform: rotate(90deg); }
 .moreIndicator.rot270 { transform: rotate(270deg); }
 
-.nav-arrow.rot180 { transform: rotate(180deg); }
-
 .details {
   border: 1px dashed #000;
-  padding: 15px;
   background-color: #f8f9fa;
   border-radius: 4px;
   color: #333;
   font-size: 1rem;
-  min-height: 120px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 1s ease, padding 1s ease;
+  display: none;
+}
+
+.details.show {
+  display: block;
+  max-height: 500px;
+  padding: 15px;
 }
 
 .details p {

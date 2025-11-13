@@ -5,12 +5,11 @@ const mWaitTime = 5000;
 let timer;
 
 $(document).ready(() => {
-  $('.details').hide();
+  $('.details').removeClass('show');
 
-  // Only rotate the "more" arrow
   $('.moreIndicator').click(function () {
     $(this).toggleClass('rot90 rot270');
-    $('.details').slideToggle(400);
+    $('.details').toggleClass('show');
   });
 
   $('#nextPhoto').click(showNextPhoto);
