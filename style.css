@@ -1,8 +1,10 @@
 body {
   overflow-x: hidden;
   font-family: 'Century Gothic', sans-serif;
-  background-image: url('img/geometry.jpg');
+  background-image: url('img/places/nature.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -21,23 +23,26 @@ body {
   text-align: center;
 }
 
+/* Fix image height so card doesn’t move */
 .thumbnail {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   border-radius: 4px;
 }
 
 .banner {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  color: #333;
+  color: #222;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .moreIndicator {
   height: 50px;
   width: 50px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
 }
 
 #nav img {
@@ -65,6 +70,6 @@ body {
   margin: 10px 0;
 }
 
-.rot90 { transform: rotate(90deg); transition: transform 0.35s ease; }
-.rot180 { transform: rotate(180deg); transition: transform 0.35s ease; }
-.rot270 { transform: rotate(270deg); transition: transform 0.35s ease; }
+.rot90 { transform: rotate(90deg); }
+.rot270 { transform: rotate(270deg); }
+.rot180 { transform: rotate(180deg); }

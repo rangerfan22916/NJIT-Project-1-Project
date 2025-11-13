@@ -7,15 +7,14 @@ let timer
 $(document).ready(() => {
   $('.details').hide()
 
-  // Toggle the metadata details
-  $('.moreIndicator').click(() => {
-    $('.moreIndicator').toggleClass('rot90 rot270')
+  // Only rotate the "more" arrow
+  $('.moreIndicator').click(function () {
+    $(this).toggleClass('rot90 rot270')
     $('.details').slideToggle(400)
   })
 
-  // Next and previous button click handlers
-  $('#nextPhoto').click(() => showNextPhoto())
-  $('#prevPhoto').click(() => showPrevPhoto())
+  $('#nextPhoto').click(showNextPhoto)
+  $('#prevPhoto').click(showPrevPhoto)
 
   fetchJSON()
 })
@@ -46,7 +45,7 @@ function swapPhoto() {
   })
   $('.location').text(`Location: ${currentImage.imgLocation}`)
   $('.description').text(`Description: ${currentImage.description}`)
-  $('.date').text(`Established: ${currentImage.Established}`)
+  $('.established').text(`Established: ${currentImage.established}`)
 }
 
 function showNextPhoto() {

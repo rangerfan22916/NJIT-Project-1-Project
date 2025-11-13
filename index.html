@@ -12,10 +12,10 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-  <div class="container my-4">
-    <div id="photoBooth" class="text-center bg-white p-3 rounded shadow-sm mx-auto">
-      <h1 class="banner mb-3">IS219 Slide Show</h1>
+  <div class="container my-4 text-center">
+    <h1 class="banner mb-4">10 Most Beautiful National Parks</h1>
 
+    <div id="photoBooth" class="bg-white p-3 rounded shadow-sm mx-auto">
       <div id="slideShow" class="row justify-content-center">
         <div class="col-12 col-md-8 photoHolder mb-3">
           <img class="thumbnail img-fluid" id="photo"
@@ -23,19 +23,19 @@
                alt="Gallery Image">
         </div>
 
-        <div class="col-12 text-center my-2">
-          <img class="moreIndicator rot90 img-fluid" src="img/more.png" alt="More Content">
-        </div>
-
-        <div id="nav" class="col-12 d-flex justify-content-between">
+        <div id="nav" class="col-12 d-flex justify-content-between mb-3">
           <img id="prevPhoto" class="rot180 img-fluid" src="img/arrow.png" alt="Previous Photo">
           <img id="nextPhoto" class="img-fluid" src="img/arrow.png" alt="Next Photo">
+        </div>
+
+        <div class="col-12 text-center my-2">
+          <img class="moreIndicator rot90 img-fluid" src="img/more.png" alt="More Content">
         </div>
 
         <div class="col-12 details mt-3 p-2">
           <p class="location"></p>
           <p class="description"></p>
-          <p class="date"></p>
+          <p class="established"></p>
         </div>
       </div>
     </div>
