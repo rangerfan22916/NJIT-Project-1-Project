@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "imgPath": "img/wonders/pyramids.jpg",
+      "imgLocation": "Great Pyramid of Giza (Egypt)",
+      "description": "The only surviving wonder; a massive limestone pyramid built as a tomb for Pharaoh Khufu.",
+      "established": "c. 2560 BC"
+    },
+    {
+      "imgPath": "img/wonders/gardens-babylon.jpg",
+      "imgLocation": "Hanging Gardens of Babylon (Iraq)",
+      "description": "A legendary series of terraced gardens said to have been built in ancient Babylon.",
+      "established": "Date unknown"
+    },
+    {
+      "imgPath": "img/wonders/zeus.jpg",
+      "imgLocation": "Statue of Zeus at Olympia (Greece)",
+      "description": "A giant seated statue of Zeus made of ivory and gold, standing over 40 feet tall.",
+      "established": "c. 435 BC"
+    },
+    {
+      "imgPath": "img/wonders/temple.jpg",
+      "imgLocation": "Temple of Artemis at Ephesus (Turkey)",
+      "description": "A massive marble temple dedicated to the goddess Artemis, rebuilt multiple times.",
+      "established": "c. 550 BC"
+    },
+    {
+      "imgPath": "img/wonders/halicarnassus.jpg",
+      "imgLocation": "Mausoleum at Halicarnassus (Turkey)",
+      "description": "A monumental tomb built for Mausolus, known for its sculptural beauty.",
+      "established": "c. 350 BC"
+    },
+    {
+      "imgPath": "img/wonders/rhodes.jpg",
+      "imgLocation": "Colossus of Rhodes (Greece)",
+      "description": "A giant bronze statue of the sun god Helios that stood over 100 feet tall.",
+      "established": "c. 280 BC"
+    },
+    {
+      "imgPath": "img/wonders/alexandria.jpg",
+      "imgLocation": "Lighthouse of Alexandria (Egypt)",
+      "description": "A 300-foot lighthouse guiding sailors to Alexandria’s harbor; one of the tallest structures of its time.",
+      "established": "c. 280 BC"
+    }
+  ]
+}
