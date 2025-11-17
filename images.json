@@ -1,13 +1,13 @@
  {
   "images": [
     {
-      "imgPath": "img/places/yosemite.jpg",
+      "imgPath": "img/places/Yosemite.jpg",
       "imgLocation": "Yosemite National Park (CA)",
       "description": "Known for its towering granite cliffs like El Capitan and Half Dome, giant sequoia trees, and stunning waterfalls.",
       "established": "October 1, 1890"
     },
     {
-      "imgPath": "img/places/zion.jpg",
+      "imgPath": "img/places/Zion.jpg",
       "imgLocation": "Zion National Park (UT)",
       "description": "Features massive sandstone cliffs and narrow canyons, with famous hikes like Angels Landing.",
       "established": "November 19, 1919"
